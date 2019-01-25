@@ -30,7 +30,7 @@ public class JobController {
         Job jobs;
         jobs=jobData.findById(id);
         model.addAttribute("jobs",jobs);
-        model.addAttribute("title", "Results for the Employer ID "+ id );
+        model.addAttribute("title", "Results for the Job ID "+ id );
 
         return "job-detail";
     }
